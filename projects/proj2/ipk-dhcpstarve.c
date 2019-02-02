@@ -41,6 +41,7 @@ typedef struct dhcp_message {   // Structure by rfc2131
 void setMac(uint8_t (*mac)[]) {  // Mac generator
     static uint8_t counter[] = {0, 0, 0, 0, 0, 0};
 
+    // Toto nepekne generovani mac slo napsat urcite rozumeji.
     if (counter[5] == 255) {
         if (counter[4] == 255) {
             if (counter[3] == 255) {
